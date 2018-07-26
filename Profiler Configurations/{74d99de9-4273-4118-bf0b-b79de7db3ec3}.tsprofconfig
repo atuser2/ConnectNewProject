@@ -1,0 +1,106 @@
+{
+  "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerMetadataConfigurationSet",
+  "__value": {
+    "_bFirstTimeUserConfigurationComplete": true,
+    "Metadata": {
+      "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerResultsMetadata",
+      "__value": {
+        "_resultsId": "00000000-0000-0000-0000-000000000000",
+        "_ownerTestId": "00000000-0000-0000-0000-000000000000",
+        "_startTime": "0001-01-01T00:00:00",
+        "_totalTime": "00:00:00",
+        "_bCollectProfilerSampleData": true,
+        "_strDescription": null,
+        "_strFolder": "c:\\temp",
+        "_strFilePath": null,
+        "_browserType": 1,
+        "_browserVersion": null,
+        "_bClearBrowserCacheBeforeRun": false,
+        "_bWarmUpServerBeforeRun": false
+      }
+    },
+    "ClientPluginConfigurations": {},
+    "Servers": {
+      "9a3833b2-b85d-4e5c-bbc3-acb70f6630d4": {
+        "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerServerMetadata",
+        "__value": {
+          "CollectProfilerSampleData": true,
+          "Description": null,
+          "Name": "local",
+          "ProfilerPluginSettings": {
+            "a43b256e-1b44-415f-ade4-6e3ea44eb755": {
+              "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.PerformanceCounterProfiler.PerformanceCounterConfigurationSettings",
+              "__value": [
+                {
+                  "Key": "Processor",
+                  "Value": {
+                    "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceObject",
+                    "__value": {
+                      "Name": "Processor",
+                      "Description": null,
+                      "Instances": {
+                        "_Total": {
+                          "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceObjectInstance",
+                          "__value": {
+                            "Name": "_Total",
+                            "Counters": {
+                              "% DPC Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% DPC Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              },
+                              "% Idle Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% Idle Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              },
+                              "% Interrupt Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% Interrupt Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              },
+                              "% Privileged Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% Privileged Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              },
+                              "% User Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% User Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "ServerId": "9a3833b2-b85d-4e5c-bbc3-acb70f6630d4",
+          "ServerPath": "localhost",
+          "ServerPort": 55555,
+          "ServerType": 0
+        }
+      }
+    },
+    "Version": "2015.3.1005.0"
+  }
+}

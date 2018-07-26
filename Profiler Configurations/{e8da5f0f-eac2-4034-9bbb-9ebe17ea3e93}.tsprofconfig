@@ -1,0 +1,201 @@
+{
+  "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerMetadataConfigurationSet",
+  "__value": {
+    "_bFirstTimeUserConfigurationComplete": true,
+    "Metadata": {
+      "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerResultsMetadata",
+      "__value": {
+        "_resultsId": "00000000-0000-0000-0000-000000000000",
+        "_ownerTestId": "00000000-0000-0000-0000-000000000000",
+        "_startTime": "0001-01-01T00:00:00",
+        "_totalTime": "00:00:00",
+        "_bCollectProfilerSampleData": true,
+        "_strDescription": null,
+        "_strFolder": "C:\\temp\\CleanPerformanceSetup",
+        "_strFilePath": null,
+        "_browserType": 1,
+        "_browserVersion": null,
+        "_bClearBrowserCacheBeforeRun": false,
+        "_bWarmUpServerBeforeRun": false
+      }
+    },
+    "ClientPluginConfigurations": {},
+    "Servers": {
+      "28b6d6bf-11b8-4c03-b061-551af90effd9": {
+        "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerServerMetadata",
+        "__value": {
+          "CollectProfilerSampleData": true,
+          "Description": null,
+          "Name": "local",
+          "ProfilerPluginSettings": {
+            "a43b256e-1b44-415f-ade4-6e3ea44eb755": {
+              "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.PerformanceCounterProfiler.PerformanceCounterConfigurationSettings",
+              "__value": [
+                {
+                  "Key": "Processor",
+                  "Value": {
+                    "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceObject",
+                    "__value": {
+                      "Name": "Processor",
+                      "Description": null,
+                      "Instances": {
+                        "_Total": {
+                          "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceObjectInstance",
+                          "__value": {
+                            "Name": "_Total",
+                            "Counters": {
+                              "% DPC Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% DPC Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              },
+                              "% Idle Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% Idle Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              },
+                              "% Interrupt Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% Interrupt Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              },
+                              "% Privileged Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% Privileged Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              },
+                              "% User Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% User Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "ServerId": "28b6d6bf-11b8-4c03-b061-551af90effd9",
+          "ServerPath": "localhost",
+          "ServerPort": 55555,
+          "ServerType": 0
+        }
+      },
+      "50824bf9-c19d-465e-901d-a185a758cc40": {
+        "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerServerMetadata",
+        "__value": {
+          "CollectProfilerSampleData": true,
+          "Description": null,
+          "Name": "remote",
+          "ProfilerPluginSettings": {
+            "a43b256e-1b44-415f-ade4-6e3ea44eb755": {
+              "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.PerformanceCounterProfiler.PerformanceCounterConfigurationSettings",
+              "__value": [
+                {
+                  "Key": "Memory",
+                  "Value": {
+                    "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceObject",
+                    "__value": {
+                      "Name": "Memory",
+                      "Description": null,
+                      "Instances": {
+                        "instance-e13142f6-8457-42e6-8e5f-5b852bed4112": {
+                          "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceObjectInstance",
+                          "__value": {
+                            "Name": null,
+                            "Counters": {
+                              "Available KBytes": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "Available KBytes",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "instance-cee7af20-e13c-45ee-97bf-b6820b823507": {
+                          "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceObjectInstance",
+                          "__value": {
+                            "Name": null,
+                            "Counters": {
+                              "Cache Bytes": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "Cache Bytes",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "instance-7c8da266-4965-4247-bebf-db6e199e53da": {
+                          "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceObjectInstance",
+                          "__value": {
+                            "Name": null,
+                            "Counters": {
+                              "Cache Bytes Peak": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "Cache Bytes Peak",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "instance-9fb79c8a-7faa-428c-ba76-cb4b4c8e1f60": {
+                          "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceObjectInstance",
+                          "__value": {
+                            "Name": null,
+                            "Counters": {
+                              "Cache Faults/sec": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "Cache Faults/sec",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "ServerId": "50824bf9-c19d-465e-901d-a185a758cc40",
+          "ServerPath": "at-2008r2x86",
+          "ServerPort": 55555,
+          "ServerType": 0
+        }
+      }
+    },
+    "Version": "2013.2.1418.0"
+  }
+}

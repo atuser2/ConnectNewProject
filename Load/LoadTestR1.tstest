@@ -1,0 +1,418 @@
+{
+  "__type": "Telerik.TestStudio.Load.LoadDesignTest",
+  "__value": {
+    "ControllerConfiguration": {
+      "__type": "Telerik.TestStudio.Load.LoadControllerConfiguration",
+      "__value": {
+        "MachineName": null
+      }
+    },
+    "ProfiledServers": [
+      {
+        "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerServerMetadata",
+        "__value": {
+          "CollectProfilerSampleData": true,
+          "Description": "",
+          "Name": "localhost",
+          "ProfilerPluginSettings": {
+            "a43b256e-1b44-415f-ade4-6e3ea44eb755": {
+              "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.PerformanceCounterProfiler.PerformanceCounterConfigurationSettings",
+              "__value": [
+                {
+                  "Key": "Processor",
+                  "Value": {
+                    "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceObject",
+                    "__value": {
+                      "Name": "Processor",
+                      "Description": null,
+                      "Instances": {
+                        "_Total": {
+                          "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceObjectInstance",
+                          "__value": {
+                            "Name": "_Total",
+                            "Counters": {
+                              "% Idle Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% Idle Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              },
+                              "% Privileged Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% Privileged Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              },
+                              "% Processor Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% Processor Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              },
+                              "% User Time": {
+                                "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.SampledPerformanceCounter",
+                                "__value": {
+                                  "Name": "% User Time",
+                                  "Description": null,
+                                  "Samples": []
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "ServerId": "2cd6b87d-0ca0-41fd-aa80-9bd9bd04901c",
+          "ServerPath": "localhost",
+          "ServerPort": 55555,
+          "ServerType": 0
+        }
+      }
+    ],
+    "Goals": [
+      {
+        "__type": "Telerik.TestStudio.Load.ViewModels.LoadTestGoalViewModel",
+        "__value": {
+          "MessageInfo": {
+            "__type": "Telerik.TestStudio.Load.Common.GoalsHelpers.GoalMessageInfo",
+            "__value": {
+              "MetricName": "Average Response Time (ms)",
+              "MachineName": "Overall Test",
+              "IsCustomGoal": false,
+              "Threshold": 300.0,
+              "Operator": ">",
+              "PassWhenGoalMet": false,
+              "StopWhenGoalMet": false
+            }
+          },
+          "Name": "Average Response Time (ms)",
+          "MachineName": "Overall Test",
+          "RunTitleDisplay": "Average Response Time (ms) for Overall Test",
+          "RunDescription": "Fail this goal if Average Response Time (ms) is greater than",
+          "ResultsDescription": "You specified to fail this goal if the value is greater than 300. The value reached is {0:0.}.",
+          "Operator": ">",
+          "Threshold": 300.0,
+          "IsEnabled": true,
+          "StopTestWhenGoalMet": false,
+          "PassWhenGoalMet": false,
+          "IsCustomGoal": false,
+          "ExampleText": "Example: \"Does my application respond in less than 3000 millisecond?\""
+        }
+      },
+      {
+        "__type": "Telerik.TestStudio.Load.ViewModels.LoadTestGoalViewModel",
+        "__value": {
+          "MessageInfo": {
+            "__type": "Telerik.TestStudio.Load.Common.GoalsHelpers.GoalMessageInfo",
+            "__value": {
+              "MetricName": "HTTP Errors/second",
+              "MachineName": "Overall Test",
+              "IsCustomGoal": false,
+              "Threshold": 0.0,
+              "Operator": ">",
+              "PassWhenGoalMet": false,
+              "StopWhenGoalMet": false
+            }
+          },
+          "Name": "HTTP Errors/second",
+          "MachineName": "Overall Test",
+          "RunTitleDisplay": "HTTP Errors/second for Overall Test",
+          "RunDescription": "Fail this goal if HTTP Errors/second is greater than",
+          "ResultsDescription": "You specified to fail this goal if the value is greater than 0. The value reached is {0:0.}.",
+          "Operator": ">",
+          "Threshold": 0.0,
+          "IsEnabled": true,
+          "StopTestWhenGoalMet": false,
+          "PassWhenGoalMet": false,
+          "IsCustomGoal": false,
+          "ExampleText": "Example: \"Does my application throw no more than 10 errors per second?\""
+        }
+      },
+      {
+        "__type": "Telerik.TestStudio.Load.ViewModels.LoadTestGoalViewModel",
+        "__value": {
+          "MessageInfo": {
+            "__type": "Telerik.TestStudio.Load.Common.GoalsHelpers.GoalMessageInfo",
+            "__value": {
+              "MetricName": "Responses Received/second",
+              "MachineName": "Overall Test",
+              "IsCustomGoal": false,
+              "Threshold": 0.0,
+              "Operator": ">",
+              "PassWhenGoalMet": true,
+              "StopWhenGoalMet": false
+            }
+          },
+          "Name": "Responses Received/second",
+          "MachineName": "Overall Test",
+          "RunTitleDisplay": "Responses Received/second for Overall Test",
+          "RunDescription": "Pass this goal if Responses Received/second is greater than",
+          "ResultsDescription": "You specified to pass this goal if the value is greater than 0. The value reached is {0:0.}.",
+          "Operator": ">",
+          "Threshold": 0.0,
+          "IsEnabled": false,
+          "StopTestWhenGoalMet": false,
+          "PassWhenGoalMet": true,
+          "IsCustomGoal": false,
+          "ExampleText": "Example: \"Does my application handle more than 100 responses per second?\""
+        }
+      },
+      {
+        "__type": "Telerik.TestStudio.Load.ViewModels.LoadTestGoalViewModel",
+        "__value": {
+          "MessageInfo": {
+            "__type": "Telerik.TestStudio.Load.Common.GoalsHelpers.GoalMessageInfo",
+            "__value": {
+              "MetricName": "Current Virtual Users",
+              "MachineName": "Overall Test",
+              "IsCustomGoal": false,
+              "Threshold": 0.0,
+              "Operator": ">",
+              "PassWhenGoalMet": true,
+              "StopWhenGoalMet": false
+            }
+          },
+          "Name": "Current Virtual Users",
+          "MachineName": "Overall Test",
+          "RunTitleDisplay": "Current Virtual Users for Overall Test",
+          "RunDescription": "Pass this goal if Current Virtual Users is greater than",
+          "ResultsDescription": "You specified to pass this goal if the value is greater than 0. The value reached is {0:0.}.",
+          "Operator": ">",
+          "Threshold": 0.0,
+          "IsEnabled": false,
+          "StopTestWhenGoalMet": false,
+          "PassWhenGoalMet": true,
+          "IsCustomGoal": false,
+          "ExampleText": "Example: \"Does my application handle more than 1000 user requests concurrently?\""
+        }
+      }
+    ],
+    "ControlAndLoadFromThisComputer": false,
+    "ReportingSampleInterval": "00:00:05",
+    "Duration": "00:02:00",
+    "Preferences": {
+      "ForceNewConnection": true,
+      "DelayGC": false
+    },
+    "IgnoreGoalsForXSeconds": 0,
+    "AuthorizationProfiles": [],
+    "IsManual": false,
+    "AutomaticallyDistributeUserGroups": false,
+    "LoadAgentConfigurations": [],
+    "UserGroups": [
+      {
+        "__type": "Telerik.TestStudio.Load.LoadDesignScenarioGroup",
+        "__value": {
+          "MinimumUsers": 1,
+          "StartUserCount": 10,
+          "MaxUserCount": 30,
+          "UserRampTimeInMinutes": 1.0,
+          "Name": null,
+          "UserScenarios": [
+            {
+              "__type": "Telerik.TestStudio.Load.ConfiguredScenario",
+              "__value": {
+                "IsEnabled": true,
+                "Percentage": 100.0,
+                "ScenarioId": "e12d2b79-fe8c-46b9-a081-27a963d7be7f"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "UserScenarios": [
+      {
+        "__type": "Telerik.TestStudio.Load.LoadDesignScenario",
+        "__value": {
+          "BindingSources": {},
+          "BindingSourceSteps": {},
+          "Actions": [
+            {
+              "__type": "Telerik.TestStudio.Load.Http.HttpDesignScenarioStep",
+              "__value": {
+                "Request": {
+                  "__type": "ArtOfTest.WebAii.Messaging.Http.HttpRequest",
+                  "__value": {
+                    "Response": null,
+                    "Content": "",
+                    "Guid": "88e93298-c03c-4d69-8042-d3de77683209",
+                    "HasCloseConnectionOption": false,
+                    "Headers": {
+                      "Accept": "application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*",
+                      "Accept-Language": "en-US",
+                      "User-Agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E)",
+                      "Accept-Encoding": "gzip, deflate",
+                      "Proxy-Connection": "Keep-Alive",
+                      "Host": "at-testinghost:9898"
+                    },
+                    "HttpMethod": "GET",
+                    "HttpVersion": "HTTP/1.1",
+                    "RequestUri": "http://at-testinghost:9898/",
+                    "ID": 1,
+                    "Timestamp": "2013-07-26T07:35:50.0169037+03:00"
+                  }
+                },
+                "UseWindowsAuthentication": true,
+                "RequestUri": "http://at-testinghost:9898/",
+                "Response": {
+                  "__type": "ArtOfTest.WebAii.Messaging.Http.HttpResponse",
+                  "__value": {
+                    "Content": "DQoNCjwhRE9DVFlQRSBodG1sIFBVQkxJQyAiLS8vVzNDLy9EVEQgWEhUTUwgMS4wIFRyYW5zaXRpb25hbC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi94aHRtbDEvRFREL3hodG1sMS10cmFuc2l0aW9uYWwuZHRkIj4NCjxodG1sIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIj4NCjxoZWFkPjxtZXRhIGh0dHAtZXF1aXY9IlByYWdtYSIgY29udGVudD0ibm8tY2FjaGUiIC8+PG1ldGEgaHR0cC1lcXVpdj0iRXhwaXJlcyIgY29udGVudD0iLTEiIC8+PHRpdGxlPg0KCVRlYW1QdWxzZSBMb2dpbg0KPC90aXRsZT4NCiAgICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KICAgIGJvZHkgeyBmb250OiAxM3B4ICJTZWdvZSBVSSIsIGFyaWFsLCBzYW5zLXNlcmlmOyBwYWRkaW5nOiAwOyBtYXJnaW46IDA7IGJhY2tncm91bmQ6ICNmZmY7IH0NCiAgICBoMSB7IGZvbnQ6IG5vcm1hbCAzMHB4ICJTZWdvZSBVSSIsIGFyaWFsLCBzYW5zLXNlcmlmOyB9DQogICAgaDIgeyB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTsgfQ0KICAgIGZvcm0geyB3aWR0aDogNTgwcHg7IG1hcmdpbjogMTAwcHggYXV0bzsgfQ0KICAgIC5wcm9wZXJ0eSB7IG92ZXJmbG93OiBoaWRkZW47IG1hcmdpbjogMCAwIDEwcHggMDsgfQ0KICAgIC52YWx1ZSBpbnB1dFt0eXBlPSJ0ZXh0Il0sDQogICAgLnZhbHVlIGlucHV0W3R5cGU9InBhc3N3b3JkIl0geyB3aWR0aDogMjQwcHg7IGZvbnQ6IDEzcHggIlNlZ29lIFVJIiwgYXJpYWwsIHNhbnMtc2VyaWY7IHBhZGRpbmc6IDJweDsgYm9yZGVyOiAxcHggc29saWQgI2NjYzt9DQogICAgDQogICAgLmFjdGlvbnMgaW5wdXQgeyBwYWRkaW5nOiA1cHggMTBweDsgZm9udDogMTNweCAiU2Vnb2UgVUkiLCBhcmlhbCwgc2Fucy1zZXJpZjt9DQogICAgPC9zdHlsZT4NCjwvaGVhZD4NCjxib2R5Pg0KICAgIDxmb3JtIG5hbWU9Ik1haW5Gb3JtIiBtZXRob2Q9InBvc3QiIGFjdGlvbj0iV2ViTG9naW4vTG9naW4uYXNweD9UcmFuc2ZlcnJlZD1UcnVlJmFtcDtSZXR1cm5Vcmw9JTJmIiBpZD0iTWFpbkZvcm0iPg0KPGRpdj4NCjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9Il9fVklFV1NUQVRFIiBpZD0iX19WSUVXU1RBVEUiIHZhbHVlPSIvd0VQRHdVS01UYzVPVE15TVRjek5nOWtGZ0lDQXc5a0ZnZ0NBUThQRmdJZUJGUmxlSFFGRFV4dloyZHBibWNnYVc0dUxpNWtaQUlERHhZRUhnVnpkSGxzWlFVWVpteHZZWFE2YkdWbWREdGthWE53YkdGNU9tNXZibVU3SGdscGJtNWxjbWgwYld4bFpBSUhEeFlDSHdFRlJtWnNiMkYwT214bFpuUTdkMmxrZEdnNk1qVXdjSGc3Y0dGa1pHbHVaem93SURRd2NIZ2dNQ0F3TzJKdmNtUmxjaTF5YVdkb2REb3hjSGdnYzI5c2FXUWdJMk5qWXpzV0JnSUJEdzhXQWg0SlRXRjRUR1Z1WjNSb0FtaGtaQUlERHc4V0FoOERBb0FCWkdRQ0JROFFEeFlDSHdBRkMxSmxiV1Z0WW1WeUlHMWxaR1JrWkFJSkQyUVdBbVlQRUE4V0FoOEFCUXRTWlcxbGJXSmxjaUJ0WldSa1pHUVlBUVVlWDE5RGIyNTBjbTlzYzFKbGNYVnBjbVZRYjNOMFFtRmphMHRsZVY5ZkZnSUZFbEpsYldWdFltVnlUV1ZEYUdWamEySnZlQVVaVjJsdVpHOTNjMUpsYldWdFltVnlUV1ZEYUdWamEySnZlTFBwb2ZWUkkycXYzV0d6V3V4WGxnRnZWMmhRMVJUeXIrYmxsMHZjNG5ZUyIgLz4NCjwvZGl2Pg0KDQo8ZGl2Pg0KDQoJPGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0iX19FVkVOVFZBTElEQVRJT04iIGlkPSJfX0VWRU5UVkFMSURBVElPTiIgdmFsdWU9Ii93RVdDQUxvOWFuZURnS3ZydXEyQ0FMU3hlQ1JEd0x4dUthdkNRTCtqTkNmRHdMTDE4amZEUUx4Nk12TEJBS1cvcmQ3RzljeFdXbHE2U0xEdVNnc1paUFNoM21sRFhWcVJmSWN1RVhpY1g4R1pSWT0iIC8+DQo8L2Rpdj4NCiAgICA8aDE+VGVhbVB1bHNlIExvZ2luPC9oMT4NCiAgICANCiAgICAgICAgICAgIDxkaXYgaWQ9IkZpcnN0TG9naW5JbmZvIiBzdHlsZT0iZmxvYXQ6bGVmdDtkaXNwbGF5Om5vbmU7Ij48L2Rpdj4NCg0KICAgICAgICAgICAgPGRpdiBzdHlsZT0iY29sb3I6UmVkIj4NCiAgICAgICAgICAgICAgICA8c3BhbiBpZD0iRXJyb3JMYWJlbCI+PC9zcGFuPg0KICAgICAgICAgICAgPC9kaXY+DQogICAgICAgIDxkaXYgaWQ9IkZvcm1zTG9naW5EaXYiIHN0eWxlPSJmbG9hdDpsZWZ0O3dpZHRoOjI1MHB4O3BhZGRpbmc6MCA0MHB4IDAgMDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkICNjY2M7Ij4NCiAgICAgICAgICAgIDxoMj5Mb2dpbiB3aXRoIHVzZXJuYW1lICZhbXA7IHBhc3N3b3JkPC9oMj4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9InByb3BlcnR5Ij4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJsYWJlbCI+VXNlcm5hbWU6PC9kaXY+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idmFsdWUiPjxpbnB1dCBuYW1lPSJVc2VyTmFtZSIgdHlwZT0idGV4dCIgbWF4bGVuZ3RoPSIxMDQiIGlkPSJVc2VyTmFtZSIgLz48L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0icHJvcGVydHkiPg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImxhYmVsIj5QYXNzd29yZDo8L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ2YWx1ZSI+PGlucHV0IG5hbWU9IlBhc3N3b3JkIiB0eXBlPSJwYXNzd29yZCIgbWF4bGVuZ3RoPSIxMjgiIGlkPSJQYXNzd29yZCIgLz48L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0icHJvcGVydHkiPg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InZhbHVlIj48aW5wdXQgaWQ9IlJlbWVtYmVyTWVDaGVja2JveCIgdHlwZT0iY2hlY2tib3giIG5hbWU9IlJlbWVtYmVyTWVDaGVja2JveCIgLz48bGFiZWwgZm9yPSJSZW1lbWJlck1lQ2hlY2tib3giPlJlbWVtYmVyIG1lPC9sYWJlbD48L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0iYWN0aW9ucyI+DQogICAgICAgICAgDQogICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9InN1Ym1pdCIgbmFtZT0iTG9naW5CdXR0b24iIHZhbHVlPSJMb2dpbiIgaWQ9IkxvZ2luQnV0dG9uIiAvPg0KICAgICAgICAgICAgPC9kaXY+DQoNCiAgICAgICAgPC9kaXY+DQogICAgICAgIDxkaXYgaWQ9IldpbkxvZ2luRGl2IiBzdHlsZT0iZmxvYXQ6IHJpZ2h0OyB3aWR0aDogMjUwcHg7Ij4NCiAgICAgICAgICAgIDxoMj4uLi5vciBMb2dpbiB1c2luZyBXaW5kb3dzIENyZWRlbnRpYWxzPC9oMj4NCiAgICAgICAgICAgIDxwPkNsaWNrIHRoZSBidXR0b24gYmVsb3cgdG8gY29udGludWUuPC9wPg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0icHJvcGVydHkiPg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InZhbHVlIj48aW5wdXQgaWQ9IldpbmRvd3NSZW1lbWJlck1lQ2hlY2tib3giIHR5cGU9ImNoZWNrYm94IiBuYW1lPSJXaW5kb3dzUmVtZW1iZXJNZUNoZWNrYm94IiAvPjxsYWJlbCBmb3I9IldpbmRvd3NSZW1lbWJlck1lQ2hlY2tib3giPlJlbWVtYmVyIG1lPC9sYWJlbD48L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0iYWN0aW9ucyI+DQogICAgICAgICAgICA8aW5wdXQgdHlwZT0ic3VibWl0IiBuYW1lPSJXaW5kb3dzQXV0aEJ1dHRvbiIgdmFsdWU9IkxvZ2luIHVzaW5nIFdpbmRvd3MgQ3JlZGVudGlhbHMiIGlkPSJXaW5kb3dzQXV0aEJ1dHRvbiIgLz4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICA8L2Rpdj4NCiAgICA8aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJVcmxIYXNoIiBpZD0iVXJsSGFzaCIgLz4gICANCiAgICANCg0KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPg0KLy88IVtDREFUQVsNCmlmKCEoZG9jdW1lbnQuZm9ybXNbMF1bJ1VybEhhc2gnXS52YWx1ZSkpIGRvY3VtZW50LmZvcm1zWzBdWydVcmxIYXNoJ10udmFsdWU9d2luZG93LmxvY2F0aW9uLmhhc2g7IGRvY3VtZW50LmZvcm1zWzBdWydVc2VyTmFtZSddLmZvY3VzKCk7IGRvY3VtZW50LmZvcm1zWzBdWydVc2VyTmFtZSddLnNlbGVjdCgpOy8vXV0+DQo8L3NjcmlwdD4NCjwvZm9ybT4NCjwvYm9keT4NCjwvaHRtbD4NCg==",
+                    "Guid": "606c6bcd-6613-4dbd-a35d-d7e47804889d",
+                    "HttpVersion": "HTTP/1.1",
+                    "IsImage": false,
+                    "IsXml": false,
+                    "MimeType": [
+                      "text/html; charset=utf-8"
+                    ],
+                    "Request": null,
+                    "Headers": {
+                      "Content-Length": "4057",
+                      "Content-Type": "text/html; charset=utf-8",
+                      "Server": "Microsoft-IIS/7.5",
+                      "X-UA-Compatible": "IE=edge",
+                      "Date": "Fri, 26 Jul 2013 04:35:51 GMT"
+                    },
+                    "StatusCode": 200,
+                    "StatusDescription": "200 OK",
+                    "Timestamp": "0001-01-01T00:00:00"
+                  }
+                },
+                "DataBindings": null,
+                "RecordedStartTime": "2013-07-26T07:35:50.0169037+03:00",
+                "DisplayHeader": "GET http://at-testinghost:9898/",
+                "BindingDestinations": null,
+                "IsEnabled": true
+              }
+            },
+            {
+              "__type": "Telerik.TestStudio.Load.ThinkTimeScenarioStep",
+              "__value": {
+                "RecordedStartTime": "0001-01-01T00:00:00",
+                "DisplayHeader": "Think time",
+                "Duration": "00:00:01",
+                "DurationInSeconds": 1.0,
+                "Deviation": "00:00:01",
+                "DeviationInSeconds": 1.0,
+                "IsEnabled": true
+              }
+            },
+            {
+              "__type": "Telerik.TestStudio.Load.Http.HttpDesignScenarioStep",
+              "__value": {
+                "Request": {
+                  "__type": "ArtOfTest.WebAii.Messaging.Http.HttpRequest",
+                  "__value": {
+                    "Response": null,
+                    "Content": "X19WSUVXU1RBVEU9JTJGd0VQRHdVS01UYzVPVE15TVRjek5nOWtGZ0lDQXc5a0ZnZ0NBUThQRmdJZUJGUmxlSFFGRFV4dloyZHBibWNnYVc0dUxpNWtaQUlERHhZRUhnVnpkSGxzWlFVWVpteHZZWFE2YkdWbWREdGthWE53YkdGNU9tNXZibVU3SGdscGJtNWxjbWgwYld4bFpBSUhEeFlDSHdFRlJtWnNiMkYwT214bFpuUTdkMmxrZEdnNk1qVXdjSGc3Y0dGa1pHbHVaem93SURRd2NIZ2dNQ0F3TzJKdmNtUmxjaTF5YVdkb2REb3hjSGdnYzI5c2FXUWdJMk5qWXpzV0JnSUJEdzhXQWg0SlRXRjRUR1Z1WjNSb0FtaGtaQUlERHc4V0FoOERBb0FCWkdRQ0JROFFEeFlDSHdBRkMxSmxiV1Z0WW1WeUlHMWxaR1JrWkFJSkQyUVdBbVlQRUE4V0FoOEFCUXRTWlcxbGJXSmxjaUJ0WldSa1pHUVlBUVVlWDE5RGIyNTBjbTlzYzFKbGNYVnBjbVZRYjNOMFFtRmphMHRsZVY5ZkZnSUZFbEpsYldWdFltVnlUV1ZEYUdWamEySnZlQVVaVjJsdVpHOTNjMUpsYldWdFltVnlUV1ZEYUdWamEySnZlTFBwb2ZWUkkycXYzV0d6V3V4WGxnRnZWMmhRMVJUeXIlMkJibGwwdmM0bllTJl9fRVZFTlRWQUxJREFUSU9OPSUyRndFV0NBTG85YW5lRGdLdnJ1cTJDQUxTeGVDUkR3THh1S2F2Q1FMJTJCak5DZkR3TEwxOGpmRFFMeDZNdkxCQUtXJTJGcmQ3RzljeFdXbHE2U0xEdVNnc1paUFNoM21sRFhWcVJmSWN1RVhpY1g4R1pSWSUzRCZVc2VyTmFtZT0mUGFzc3dvcmQ9JkxvZ2luQnV0dG9uPUxvZ2luJlVybEhhc2g9",
+                    "Guid": "b85059a7-02e3-413f-acec-2803ae95d4db",
+                    "HasCloseConnectionOption": false,
+                    "Headers": {
+                      "Accept": "application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*",
+                      "Referer": "http://at-testinghost:9898/",
+                      "Accept-Language": "en-US",
+                      "User-Agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.3; .NET4.0C; .NET4.0E)",
+                      "Content-Type": "application/x-www-form-urlencoded",
+                      "Accept-Encoding": "gzip, deflate",
+                      "Host": "at-testinghost:9898",
+                      "Content-Length": "726",
+                      "Proxy-Connection": "Keep-Alive",
+                      "Pragma": "no-cache"
+                    },
+                    "HttpMethod": "POST",
+                    "HttpVersion": "HTTP/1.1",
+                    "RequestUri": "http://at-testinghost:9898/WebLogin/Login.aspx?Transferred=True&ReturnUrl=%2f",
+                    "ID": 2,
+                    "Timestamp": "2013-07-26T07:35:54.2893309+03:00"
+                  }
+                },
+                "UseWindowsAuthentication": true,
+                "RequestUri": "http://at-testinghost:9898/WebLogin/Login.aspx?Transferred=True&ReturnUrl=%2f",
+                "Response": {
+                  "__type": "ArtOfTest.WebAii.Messaging.Http.HttpResponse",
+                  "__value": {
+                    "Content": "DQoNCjwhRE9DVFlQRSBodG1sIFBVQkxJQyAiLS8vVzNDLy9EVEQgWEhUTUwgMS4wIFRyYW5zaXRpb25hbC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi94aHRtbDEvRFREL3hodG1sMS10cmFuc2l0aW9uYWwuZHRkIj4NCjxodG1sIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIj4NCjxoZWFkPjxtZXRhIGh0dHAtZXF1aXY9IlByYWdtYSIgY29udGVudD0ibm8tY2FjaGUiIC8+PG1ldGEgaHR0cC1lcXVpdj0iRXhwaXJlcyIgY29udGVudD0iLTEiIC8+PHRpdGxlPg0KCVRlYW1QdWxzZSBMb2dpbg0KPC90aXRsZT4NCiAgICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KICAgIGJvZHkgeyBmb250OiAxM3B4ICJTZWdvZSBVSSIsIGFyaWFsLCBzYW5zLXNlcmlmOyBwYWRkaW5nOiAwOyBtYXJnaW46IDA7IGJhY2tncm91bmQ6ICNmZmY7IH0NCiAgICBoMSB7IGZvbnQ6IG5vcm1hbCAzMHB4ICJTZWdvZSBVSSIsIGFyaWFsLCBzYW5zLXNlcmlmOyB9DQogICAgaDIgeyB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTsgfQ0KICAgIGZvcm0geyB3aWR0aDogNTgwcHg7IG1hcmdpbjogMTAwcHggYXV0bzsgfQ0KICAgIC5wcm9wZXJ0eSB7IG92ZXJmbG93OiBoaWRkZW47IG1hcmdpbjogMCAwIDEwcHggMDsgfQ0KICAgIC52YWx1ZSBpbnB1dFt0eXBlPSJ0ZXh0Il0sDQogICAgLnZhbHVlIGlucHV0W3R5cGU9InBhc3N3b3JkIl0geyB3aWR0aDogMjQwcHg7IGZvbnQ6IDEzcHggIlNlZ29lIFVJIiwgYXJpYWwsIHNhbnMtc2VyaWY7IHBhZGRpbmc6IDJweDsgYm9yZGVyOiAxcHggc29saWQgI2NjYzt9DQogICAgDQogICAgLmFjdGlvbnMgaW5wdXQgeyBwYWRkaW5nOiA1cHggMTBweDsgZm9udDogMTNweCAiU2Vnb2UgVUkiLCBhcmlhbCwgc2Fucy1zZXJpZjt9DQogICAgPC9zdHlsZT4NCjwvaGVhZD4NCjxib2R5Pg0KICAgIDxmb3JtIG5hbWU9Ik1haW5Gb3JtIiBtZXRob2Q9InBvc3QiIGFjdGlvbj0iTG9naW4uYXNweD9UcmFuc2ZlcnJlZD1UcnVlJmFtcDtSZXR1cm5Vcmw9JTJmIiBpZD0iTWFpbkZvcm0iPg0KPGRpdj4NCjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9Il9fVklFV1NUQVRFIiBpZD0iX19WSUVXU1RBVEUiIHZhbHVlPSIvd0VQRHdVS01UYzVPVE15TVRjek5nOWtGZ0lDQXc5a0Znb0NBUThQRmdJZUJGUmxlSFFGRFV4dloyZHBibWNnYVc0dUxpNWtaQUlERHhZRUhnVnpkSGxzWlFVWVpteHZZWFE2YkdWbWREdGthWE53YkdGNU9tNXZibVU3SGdscGJtNWxjbWgwYld4bFpBSUZEdzhXQWg4QUJSOUpibU52Y25KbFkzUWdkWE5sY201aGJXVWdiM0lnY0dGemMzZHZjbVF1WkdRQ0J3OFdBaDhCQlVabWJHOWhkRHBzWldaME8zZHBaSFJvT2pJMU1IQjRPM0JoWkdScGJtYzZNQ0EwTUhCNElEQWdNRHRpYjNKa1pYSXRjbWxuYUhRNk1YQjRJSE52Ykdsa0lDTmpZMk03RmdZQ0FROFBGZ0llQ1UxaGVFeGxibWQwYUFKb1pHUUNBdzhQRmdJZkF3S0FBV1JrQWdVUEVBOFdBaDhBQlF0U1pXMWxiV0psY2lCdFpXUmtaR1FDQ1E5a0ZnSm1EeEFQRmdJZkFBVUxVbVZ0WlcxaVpYSWdiV1ZrWkdSa0dBRUZIbDlmUTI5dWRISnZiSE5TWlhGMWFYSmxVRzl6ZEVKaFkydExaWGxmWHhZQ0JSSlNaVzFsYldKbGNrMWxRMmhsWTJ0aWIzZ0ZHVmRwYm1SdmQzTlNaVzFsYldKbGNrMWxRMmhsWTJ0aWIzZ2lQY2VZSW1FaXphdXlKTmFhOXNNSHZQQTNLdkhWVHlFYllyTEFObWY2SVE9PSIgLz4NCjwvZGl2Pg0KDQo8ZGl2Pg0KDQoJPGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0iX19FVkVOVFZBTElEQVRJT04iIGlkPSJfX0VWRU5UVkFMSURBVElPTiIgdmFsdWU9Ii93RVdDQUxBNXR5UEFRS3ZydXEyQ0FMU3hlQ1JEd0x4dUthdkNRTCtqTkNmRHdMTDE4amZEUUx4Nk12TEJBS1cvcmQ3Ky9tbFA4SW1SZjBmdTNub3JtNHNwUm1Cdm05QUdYVmVpUFJ5aXArck94cz0iIC8+DQo8L2Rpdj4NCiAgICA8aDE+VGVhbVB1bHNlIExvZ2luPC9oMT4NCiAgICANCiAgICAgICAgICAgIDxkaXYgaWQ9IkZpcnN0TG9naW5JbmZvIiBzdHlsZT0iZmxvYXQ6bGVmdDtkaXNwbGF5Om5vbmU7Ij48L2Rpdj4NCg0KICAgICAgICAgICAgPGRpdiBzdHlsZT0iY29sb3I6UmVkIj4NCiAgICAgICAgICAgICAgICA8c3BhbiBpZD0iRXJyb3JMYWJlbCI+SW5jb3JyZWN0IHVzZXJuYW1lIG9yIHBhc3N3b3JkLjwvc3Bhbj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICA8ZGl2IGlkPSJGb3Jtc0xvZ2luRGl2IiBzdHlsZT0iZmxvYXQ6bGVmdDt3aWR0aDoyNTBweDtwYWRkaW5nOjAgNDBweCAwIDA7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZCAjY2NjOyI+DQogICAgICAgICAgICA8aDI+TG9naW4gd2l0aCB1c2VybmFtZSAmYW1wOyBwYXNzd29yZDwvaDI+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJwcm9wZXJ0eSI+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ibGFiZWwiPlVzZXJuYW1lOjwvZGl2Pg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InZhbHVlIj48aW5wdXQgbmFtZT0iVXNlck5hbWUiIHR5cGU9InRleHQiIG1heGxlbmd0aD0iMTA0IiBpZD0iVXNlck5hbWUiIC8+PC9kaXY+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9InByb3BlcnR5Ij4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJsYWJlbCI+UGFzc3dvcmQ6PC9kaXY+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idmFsdWUiPjxpbnB1dCBuYW1lPSJQYXNzd29yZCIgdHlwZT0icGFzc3dvcmQiIG1heGxlbmd0aD0iMTI4IiBpZD0iUGFzc3dvcmQiIC8+PC9kaXY+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9InByb3BlcnR5Ij4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ2YWx1ZSI+PGlucHV0IGlkPSJSZW1lbWJlck1lQ2hlY2tib3giIHR5cGU9ImNoZWNrYm94IiBuYW1lPSJSZW1lbWJlck1lQ2hlY2tib3giIC8+PGxhYmVsIGZvcj0iUmVtZW1iZXJNZUNoZWNrYm94Ij5SZW1lbWJlciBtZTwvbGFiZWw+PC9kaXY+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImFjdGlvbnMiPg0KICAgICAgICAgIA0KICAgICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJzdWJtaXQiIG5hbWU9IkxvZ2luQnV0dG9uIiB2YWx1ZT0iTG9naW4iIGlkPSJMb2dpbkJ1dHRvbiIgLz4NCiAgICAgICAgICAgIDwvZGl2Pg0KDQogICAgICAgIDwvZGl2Pg0KICAgICAgICA8ZGl2IGlkPSJXaW5Mb2dpbkRpdiIgc3R5bGU9ImZsb2F0OiByaWdodDsgd2lkdGg6IDI1MHB4OyI+DQogICAgICAgICAgICA8aDI+Li4ub3IgTG9naW4gdXNpbmcgV2luZG93cyBDcmVkZW50aWFsczwvaDI+DQogICAgICAgICAgICA8cD5DbGljayB0aGUgYnV0dG9uIGJlbG93IHRvIGNvbnRpbnVlLjwvcD4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9InByb3BlcnR5Ij4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ2YWx1ZSI+PGlucHV0IGlkPSJXaW5kb3dzUmVtZW1iZXJNZUNoZWNrYm94IiB0eXBlPSJjaGVja2JveCIgbmFtZT0iV2luZG93c1JlbWVtYmVyTWVDaGVja2JveCIgLz48bGFiZWwgZm9yPSJXaW5kb3dzUmVtZW1iZXJNZUNoZWNrYm94Ij5SZW1lbWJlciBtZTwvbGFiZWw+PC9kaXY+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImFjdGlvbnMiPg0KICAgICAgICAgICAgPGlucHV0IHR5cGU9InN1Ym1pdCIgbmFtZT0iV2luZG93c0F1dGhCdXR0b24iIHZhbHVlPSJMb2dpbiB1c2luZyBXaW5kb3dzIENyZWRlbnRpYWxzIiBpZD0iV2luZG93c0F1dGhCdXR0b24iIC8+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgPC9kaXY+DQogICAgPGlucHV0IHR5cGU9ImhpZGRlbiIgbmFtZT0iVXJsSGFzaCIgaWQ9IlVybEhhc2giIC8+ICAgDQogICAgPC9mb3JtPg0KPC9ib2R5Pg0KPC9odG1sPg0K",
+                    "Guid": "2f95a41d-b37c-4c4d-ac1a-59eb05e50938",
+                    "HttpVersion": "HTTP/1.1",
+                    "IsImage": false,
+                    "IsXml": false,
+                    "MimeType": [
+                      "text/html; charset=utf-8"
+                    ],
+                    "Request": null,
+                    "Headers": {
+                      "Content-Length": "3894",
+                      "Cache-Control": "private",
+                      "Content-Type": "text/html; charset=utf-8",
+                      "Server": "Microsoft-IIS/7.5",
+                      "X-AspNet-Version": "4.0.30319",
+                      "Set-Cookie": "ASP.NET_SessionId=dfnumq3sqz2o3ygl4hrjgcfa; path=/; HttpOnly",
+                      "X-UA-Compatible": "IE=edge",
+                      "Date": "Fri, 26 Jul 2013 04:35:54 GMT"
+                    },
+                    "StatusCode": 200,
+                    "StatusDescription": "200 OK",
+                    "Timestamp": "0001-01-01T00:00:00"
+                  }
+                },
+                "DataBindings": null,
+                "RecordedStartTime": "2013-07-26T07:35:54.2893309+03:00",
+                "DisplayHeader": "POST http://at-testinghost:9898/WebLogin/Login.aspx?Transferred=True&ReturnUrl=%2f",
+                "BindingDestinations": null,
+                "IsEnabled": true
+              }
+            }
+          ],
+          "Description": "HTTP traffic recorded at 7/26/2013 7:35:56 AM",
+          "Guid": "e12d2b79-fe8c-46b9-a081-27a963d7be7f",
+          "WindowsAuthenticationProfileId": null,
+          "FunctionalTestBrowser": 0,
+          "FunctionalTestPath": "Load\\LoadTestR1.tstest",
+          "Name": "Capture (7/26/2013 7:35:56 AM)"
+        }
+      }
+    ],
+    "LastView": 3,
+    "TestLinks": [],
+    "DataInfo": {
+      "__type": "ArtOfTest.Common.Design.Data.DataInfo",
+      "__value": {
+        "ConnectionString": "",
+        "DefaultToGrid": true,
+        "DataRange": "",
+        "LoadRecordsCount": null,
+        "DataTableName": "",
+        "DataProvider": "",
+        "DataEnabled": true,
+        "HasBuiltinGrid": false,
+        "DataType": 4,
+        "BuiltInData": null,
+        "BuiltInDocumentKey": null,
+        "TSQL": ""
+      }
+    },
+    "Description": "",
+    "Name": "LoadTestR1",
+    "Owner": "",
+    "Path": "Load\\LoadTestR1.tstest",
+    "Priority": 0,
+    "TestType": 3,
+    "UniqueId": "18ed6f2b-09b0-48bb-a164-f6a522983b60",
+    "Id": "18ed6f2b-09b0-48bb-a164-f6a522983b60",
+    "ProjectId": "8e087b70-b2cf-4ea3-8cae-7196e81e5a85",
+    "Version": 200,
+    "ExecutionDescription": "LoadTestR1 for 2 minutes with 30 users"
+  }
+}
